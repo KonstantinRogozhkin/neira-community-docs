@@ -1,0 +1,65 @@
+graph TD
+    %% Определяем стили
+    classDef repo_private fill:#F8D7DA,stroke:#DC3545,stroke-width:4px,color:#000;
+    classDef repo_public fill:#D1E7DD,stroke:#198754,stroke-width:2px,color:#000;
+    classDef package_private fill:#F5C6CB,stroke:#842029,stroke-width:2px,color:#000;
+    classDef build_tool fill:#FFF3CD,stroke:#FFC107,stroke-width:2px,color:#000;
+    classDef product fill:#CFF4FC,stroke:#0D6EFD,stroke-width:2px,color:#000;
+    classDef user fill:#E9D5FF,stroke:#9B59B6,stroke-width:2px,color:#000;
+
+    %% Блок 1: Основной репозиторий
+    subgraph neira_enterprise ["<b>neira-enterprise</b> (Private Repo)"]
+        direction LR
+        
+        %% Под-блок: Инструменты и Конфигурации
+        subgraph "Workspace Tools"
+            ROOT_PKG["<b>package.json</b><br/>(yarn workspaces, scripts)"]:::build_tool
+            GIT_MODULES[".gitmodules"]:::build_tool
+        end
+
+        %% Под-блок: Приватные пакеты
+        subgraph "packages/ (Private Code)"
+            PKG_NEIRA_APP["<b>neira-app</b><br/>(UI для Business Suite)"]:::package_private
+            PKG_SERM["<b>app-serm-manager</b><br/>(Пример бизнес-агента)"]:::package_private
+            PKG_CONNECTOR["<b>neira-cloud-connector</b><br/>(Связь с облаком)"]:::package_private
+        end
+
+        %% Под-блок: Публичная платформа как зависимость
+        subgraph "platform/ (Public Code)"
+            PLATFORM["<b>neira-core</b><br/>(Git Submodule)"]:::repo_public
+        end
+
+    end
+    classDef neira_enterprise_subgraph fill:transparent,stroke:#DC3545,stroke-width:2px;
+    class neira_enterprise neira_enterprise_subgraph;
+
+
+    %% Блок 2: Внешние сущности
+    subgraph "External Entities"
+        DEV[🧑‍💻 Ваша Команда]:::user
+        PRODUCT["<b>NEIRA Business Suite</b><br/>(Конечный .dmg/.exe)"]:::product
+        GITHUB_CORE["GitHub: neira-core"]:::repo_public
+    end
+
+    %% Связи и рабочие процессы
+
+    %% 1. Процесс разработки
+    DEV -- "Клонирует<br/>(--recurse-submodules)" --> neira-enterprise;
+    DEV -- "Работает над<br/>приватными пакетами" --> PKG_NEIRA_APP;
+    DEV -- "Запускает 'yarn dev:business'" --> ROOT_PKG;
+
+    %% 2. Внутренние зависимости
+    GIT_MODULES -- "Определяет ссылку на" --> GITHUB_CORE;
+    GITHUB_CORE -- "Загружается в" --> PLATFORM;
+    ROOT_PKG -- "Объединяет workspaces" --> PLATFORM;
+    ROOT_PKG -- "Объединяет workspaces" --> PKG_NEIRA_APP;
+    PKG_NEIRA_APP -- "Использует" --> PKG_CONNECTOR;
+    PKG_CONNECTOR -- "Использует ядро из" --> PLATFORM;
+    
+    %% 3. Процесс сборки
+    ROOT_PKG -- "Скрипт 'build:business'<br/>собирает" --> PRODUCT;
+    PLATFORM -- "Используется как<br/>основа для" --> PRODUCT;
+    PKG_NEIRA_APP & PKG_SERM -- "Включаются в" --> PRODUCT;
+    
+    %% 4. Обновление платформы
+    DEV -- "Запускает 'git submodule update'" --> GIT_MODULES;

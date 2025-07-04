@@ -1,0 +1,8 @@
+{
+  "label": "2. Ядро Shell",
+  "position": 2,
+  "link": {
+    "type": "generated-index",
+    "description": "Принципы работы ядра на Electron (shell): IPC, управление окнами, фоновые процессы (workers), интеграция с расширениями Chrome и стратегия логирования."
+  }
+} 

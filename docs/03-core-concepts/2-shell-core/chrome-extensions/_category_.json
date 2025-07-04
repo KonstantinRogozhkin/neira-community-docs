@@ -1,0 +1,8 @@
+{
+  "label": "Подсистема Chrome Extensions",
+  "position": 5,
+  "link": {
+    "type": "generated-index",
+    "description": "Здесь описана архитектура поддержки расширений Chrome в NEIRA Super App."
+  }
+} 

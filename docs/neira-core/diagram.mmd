@@ -1,0 +1,73 @@
+graph TD
+    %% Определяем стили для узлов
+    classDef build_tool fill:#FFF3CD,stroke:#FFC107,color:#664d03,stroke-width:2px;
+    classDef core_lib fill:#D1E7DD,stroke:#198754,color:#0f5132,stroke-width:2px;
+    classDef app_ui fill:#CFF4FC,stroke:#0D6EFD,color:#055160,stroke-width:2px;
+    classDef main_process fill:#F8D7DA,stroke:#DC3545,color:#842029,stroke-width:4px;
+    classDef external fill:#E9D5FF,stroke:#9B59B6,color:#5e3370,stroke-width:2px;
+
+    %% Блок 1: Инструменты сборки и оркестрации (на верхнем уровне)
+    subgraph " "
+        direction LR
+        subgraph "Build & Orchestration"
+            ROOT_PKG["<b>package.json</b><br/>(yarn workspaces, scripts)"]
+            TURBO["<b>turbo.json</b><br/>(Build Dependency Graph)"]
+        end
+    end
+    class ROOT_PKG,TURBO build_tool;
+
+    %% Блок 2: Внутренние пакеты (monorepo)
+    subgraph "packages/"
+        subgraph "core/ (Библиотеки ядра)"
+            CORE_SHELL["
+                <b>shell</b>
+                <br/>
+                <i>Electron Main Process</i>
+                <br/>
+                - IPCManager
+                - WindowManager
+                - <b>AppManager (Marketplace)</b>
+            "]:::main_process
+
+            CORE_SHARED_TYPES["📜 <b>shared-types</b><br/>(Контракт API и типы)"]:::core_lib
+            CORE_UI_SHARED["🎨 <b>ui-shared</b><br/>(Общие React компоненты)"]:::core_lib
+            CORE_HOOKS_SHARED["🪝 <b>hooks-shared</b><br/>(Общие React хуки)"]:::core_lib
+        end
+
+        subgraph "apps/ (Встроенные UI Приложения)"
+            APP_LIBRECHAT["<b>librechat-ui</b><br/>(UI по умолчанию для разработчиков)"]:::app_ui
+            APP_MARKETPLACE["<b>marketplace-ui</b><br/>(Интерфейс для 'App Store')"]:::app_ui
+        end
+    end
+
+    %% Блок 3: Внешние зависимости (для контекста)
+    subgraph "External World"
+        EXT_REGISTRY["<b>neira-apps</b><br/>(GitHub Repo с index.json)"]:::external
+    end
+
+
+    %% Связи и потоки данных
+
+    %% 1. Процесс сборки (Build-Time)
+    ROOT_PKG -- "invokes" --> TURBO;
+    TURBO -- "orchestrates build for" --> CORE_SHELL;
+    TURBO -- "orchestrates build for" --> APP_LIBRECHAT;
+    TURBO -- "orchestrates build for" --> APP_MARKETPLACE;
+    
+    %% 2. Зависимости между пакетами (Compile-Time)
+    APP_LIBRECHAT -->|Uses Components| CORE_UI_SHARED;
+    APP_LIBRECHAT -->|Uses Hooks| CORE_HOOKS_SHARED;
+    APP_LIBRECHAT -->|Uses Types| CORE_SHARED_TYPES;
+
+    APP_MARKETPLACE -->|Uses Components| CORE_UI_SHARED;
+    APP_MARKETPLACE -->|Uses Hooks| CORE_HOOKS_SHARED;
+    APP_MARKETPLACE -->|Uses Types| CORE_SHARED_TYPES;
+
+    CORE_SHELL -->|Uses Types| CORE_SHARED_TYPES;
+    CORE_UI_SHARED -->|Uses Types, e.g. for props| CORE_SHARED_TYPES;
+
+    %% 3. Взаимодействие во время работы (Run-Time)
+    CORE_SHELL <-.->|<b>IPC Bridge</b><br/>двунаправленная связь| APP_LIBRECHAT;
+    CORE_SHELL <-.->|<b>IPC Bridge</b>| APP_MARKETPLACE;
+    
+    CORE_SHELL -.->|Fetches app list| EXT_REGISTRY

@@ -1,0 +1,8 @@
+{
+  "label": "4. AI Engine",
+  "position": 4,
+  "link": {
+    "type": "generated-index",
+    "description": "Архитектура AI-компонентов: интеграция с Python, gRPC API, сервис планировщика (Planner), голосовой интерфейс и прокси для AI-серверов."
+  }
+} 

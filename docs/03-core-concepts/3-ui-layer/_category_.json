@@ -1,0 +1,8 @@
+{
+  "label": "3. UI Layer (neira-app)",
+  "position": 3,
+  "link": {
+    "type": "generated-index",
+    "description": "Все, что касается UI-слоя на Next.js (neira-app): архитектура чата, навигация, стейт-менеджмент (Zustand & React Query) и дизайн-система."
+  }
+} 

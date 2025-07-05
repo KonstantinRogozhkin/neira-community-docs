@@ -143,10 +143,10 @@ File Watcher синхронизирует состояние с VS Code:
 
 ## 8. Связанные документы
 
-- [File Watching Implementation](/03-core-concepts/2-shell-core/09-file-watching-implementation) — Детальная реализация
+- [File Watching Implementation](/core-concepts/shell-core/file-watching-implementation) — Детальная реализация
 
-- [CodeOSS Integration](/04-reference/03-code-editor) — Интеграция с VS Code
-- [Manager Architecture](/03-core-concepts/1-architecture-patterns/04-manager-architecture) — Роль CodeOSSManager
+- [CodeOSS Integration](/reference/code-editor) — Интеграция с VS Code
+- [Manager Architecture](/core-concepts/architecture-patterns/manager-architecture) — Роль CodeOSSManager
 
 ---
 

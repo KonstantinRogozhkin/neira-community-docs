@@ -11,32 +11,32 @@ const featureSections = [
       {
         title: 'User Journeys',
         description: 'Ролевые инструкции для разработчиков, QA и архитекторов.',
-        link: '/docs/00-user-journeys/01-for-new-developer',
+        link: '/docs/user-journeys/for-new-developer',
       },
       {
         title: 'Getting Started',
         description: 'Все для начала работы: установка, настройка, ключи.',
-        link: '/docs/01-getting-started/01-developer-onboarding',
+        link: '/docs/getting-started/developer-onboarding',
       },
       {
         title: 'How-to Guides',
         description: 'Практические руководства по решению конкретных задач.',
-        link: '/docs/02-how-to-guides/01-troubleshooting-common-issues',
+        link: '/docs/how-to-guides/troubleshooting-common-issues',
       },
       {
         title: 'Core Concepts',
         description: 'Самый важный раздел, описывающий ядро системы.',
-        link: '/docs/03-core-concepts/1-architecture-patterns/01-system-overview',
+        link: '/docs/core-concepts/architecture-patterns/system-overview',
       },
        {
         title: 'Reference',
         description: 'Справочные материалы и API-документация.',
-        link: '/docs/04-reference/02-openrouter-integration',
+        link: '/docs/reference/openrouter-integration',
       },
        {
         title: 'Contributing',
         description: 'Правила разработки, стандарты кода и процессы.',
-        link: '/docs/05-contributing/01-golden-principles',
+        link: '/docs/contributing/golden-principles',
       },
     ],
   },
@@ -49,17 +49,17 @@ const ArchitectureLinks = () => (
             <div>
                 <h4>Системный обзор</h4>
                 <ul>
-                    <li><Link to="/docs/03-core-concepts/1-architecture-patterns/01-system-overview">Обзор архитектуры</Link></li>
-                    <li><Link to="/docs/03-core-concepts/1-architecture-patterns/04-manager-architecture">Архитектура менеджеров</Link></li>
-                    <li><Link to="/docs/03-core-concepts/1-architecture-patterns/03-code-organization">Организация кода</Link></li>
+                    <li><Link to="/docs/core-concepts/architecture-patterns/system-overview">Обзор архитектуры</Link></li>
+                    <li><Link to="/docs/core-concepts/architecture-patterns/manager-architecture">Архитектура менеджеров</Link></li>
+                    <li><Link to="/docs/core-concepts/architecture-patterns/code-organization">Организация кода</Link></li>
                 </ul>
             </div>
             <div>
                 <h4>AI и чат</h4>
                 <ul>
-                    <li><Link to="/docs/03-core-concepts/3-ui-layer/01-chat-architecture">Архитектура и жизненный цикл чата</Link></li>
-                    <li><Link to="/docs/03-core-concepts/2-shell-core/05-api-management">Управление API (APIManager)</Link></li>
-                    <li><Link to="/docs/03-core-concepts/4-ai-engine/16-proxy-ai-server">Прокси-сервер для AI</Link></li>
+                    <li><Link to="/docs/core-concepts/ui-layer/chat-architecture">Архитектура и жизненный цикл чата</Link></li>
+                    <li><Link to="/docs/core-concepts/shell-core/api-management">Управление API (APIManager)</Link></li>
+                    <li><Link to="/docs/core-concepts/ai-engine/proxy-ai-server">Прокси-сервер для AI</Link></li>
                 </ul>
             </div>
         </div>
@@ -71,9 +71,9 @@ const HowToGuidesLinks = () => (
         <h3 className={styles.linkSectionTitle}>Практические руководства</h3>
         <div className={styles.linkGrid}>
             <ul>
-                <li><Link to="/docs/02-how-to-guides/01-troubleshooting-common-issues">Устранение неполадок</Link></li>
-                <li><Link to="/docs/02-how-to-guides/02-debug-mcp-integration">Отладка интеграции MCP</Link></li>
-                <li><Link to="/docs/02-how-to-guides/04-build-and-deploy">Сборка и развертывание</Link></li>
+                <li><Link to="/docs/how-to-guides/troubleshooting-common-issues">Устранение неполадок</Link></li>
+                <li><Link to="/docs/how-to-guides/debug-mcp-integration">Отладка интеграции MCP</Link></li>
+                <li><Link to="/docs/how-to-guides/build-and-deploy">Сборка и развертывание</Link></li>
             </ul>
         </div>
     </div>

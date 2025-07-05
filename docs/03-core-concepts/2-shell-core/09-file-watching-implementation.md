@@ -168,5 +168,5 @@ private notifyVSCodeOfChange(eventType: string, filePath: string) {
 
 ## 7. Связанные документы
 
-- [File Watching Architecture](/03-core-concepts/2-shell-core/09-file-watching) — Основная архитектура
+- [File Watching Architecture](/core-concepts/shell-core/file-watching) — Основная архитектура
  

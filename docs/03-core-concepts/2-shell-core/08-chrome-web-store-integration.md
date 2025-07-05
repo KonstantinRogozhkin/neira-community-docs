@@ -181,8 +181,8 @@ installChromeWebStore({
 
 ## Связанные документы
 
-- [Руководство по установке расширений Chrome](/02-how-to-guides/04-installing-chrome-extensions)
-- [Справочник по Chrome Extensions API](/04-reference/02-chrome-extensions)
+- [Руководство по установке расширений Chrome](/how-to-guides/installing-chrome-extensions)
+- [Справочник по Chrome Extensions API](/reference/chrome-extensions)
 
 ---
 

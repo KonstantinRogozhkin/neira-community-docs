@@ -121,7 +121,7 @@ const fixMarkdownLinks = (dir) => {
     } else if (entry.isFile() && (entry.name.endsWith('.md') || entry.name.endsWith('.mdx'))) {
       let content = fs.readFileSync(fullPath, 'utf8');
       
-      // Регулярное выражение для поиска относительных ссылок в Markdown: [текст](./ссылка.md)
+      // Регулярное выражение для поиска относительных ссылок в Markdown: [текст](./ссылка.md) или [текст](../ссылка.md)
       const markdownLinkRegex = /\[([^\]]+)\]\(((\.\.?\/)+[\w\d\-\/]+\.mdx?)\)/g;
 
       let changed = false;
@@ -129,15 +129,18 @@ const fixMarkdownLinks = (dir) => {
         // Создаем абсолютный путь от корня документации
         const absolutePath = path.resolve(path.dirname(fullPath), relativePath);
         
-        // Преобразуем его в путь, понятный для Docusaurus (/docs/...)
+        // Преобразуем его в путь, понятный для Docusaurus
         const docRoot = path.join(process.cwd(), 'docs');
-        const docusaurusPath = path.relative(docRoot, absolutePath).replace(/\\/g, '/').replace(/\.mdx?$/, '');
+        let docusaurusPath = path.relative(docRoot, absolutePath).replace(/\\/g, '/').replace(/\.mdx?$/, '');
         
-        // Docusaurus 3 требует, чтобы пути начинались с /
-        const finalPath = docusaurusPath.startsWith('/') ? docusaurusPath : `/${docusaurusPath}`;
-
+        // Удаляем числовые префиксы из всех сегментов пути, как это делает Docusaurus
+        docusaurusPath = docusaurusPath.split('/').map(segment => {
+          return segment.replace(/^\d+-/, '');
+        }).join('/');
+        
+        // Возвращаем путь без ведущего слеша (Docusaurus автоматически добавит baseUrl)
         changed = true;
-        return `[${text}](${finalPath})`;
+        return `[${text}](${docusaurusPath})`;
       });
 
       if (changed) {

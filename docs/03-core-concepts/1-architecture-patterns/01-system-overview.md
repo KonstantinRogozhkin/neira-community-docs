@@ -43,7 +43,7 @@ sequenceDiagram
 - **IPCManager** – регистрация/маршрутизация каналов
 - **APIManager** – _тонкий прокси_ для делегирования в polylith-backend
 
-> **Детали:** [Manager Architecture](/03-core-concepts/1-architecture-patterns/04-manager-architecture)
+> **Детали:** [Manager Architecture](/core-concepts/architecture-patterns/manager-architecture)
 
 ### 2. Паттерн "Тонкий прокси" (2025 рефакторинг)
 
@@ -124,7 +124,7 @@ flowchart TD
 - ✅ TaskExecutionService активно используется
 - ⏳ PlannerService в процессе переноса
 
-> **Детали:** [Polylith Architecture](/03-core-concepts/1-architecture-patterns/10-polylith-architecture)
+> **Детали:** [Polylith Architecture](/core-concepts/architecture-patterns/polylith-architecture)
 
 ## Режимы работы
 
@@ -152,18 +152,18 @@ yarn dev:neira-app  # Только AI-приложение
 
 ### Архитектурные паттерны
 
-- 📋 [Manager Architecture](/03-core-concepts/1-architecture-patterns/04-manager-architecture)
-- 🧱 [Polylith Architecture](/03-core-concepts/1-architecture-patterns/10-polylith-architecture)
+- 📋 [Manager Architecture](/core-concepts/architecture-patterns/manager-architecture)
+- 🧱 [Polylith Architecture](/core-concepts/architecture-patterns/polylith-architecture)
 
 ### Компоненты системы
 
-- 🖥️ [Shell Core](/03-core-concepts/2-shell-core/01-shell-architecture)
-- 🎨 [UI Layer](/03-core-concepts/3-ui-layer/01-chat-architecture)
-- 🤖 [AI Engine](/03-core-concepts/4-ai-engine/01-ai-architecture)
+- 🖥️ [Shell Core](/core-concepts/shell-core/shell-architecture)
+- 🎨 [UI Layer](/core-concepts/ui-layer/chat-architecture)
+- 🤖 [AI Engine](/core-concepts/ai-engine/ai-architecture)
 
 ### Интеграции
 
-- 🔌 [IPC Architecture](/03-core-concepts/2-shell-core/06-ipc-architecture)
+- 🔌 [IPC Architecture](/core-concepts/shell-core/ipc-architecture)
 
 ---
 

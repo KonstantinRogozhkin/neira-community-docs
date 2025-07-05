@@ -15,9 +15,9 @@
 **Применение:** Стабилизация Python API  
 **Проблема:** Каскадные сбои при нестабильном запуске  
 **Решение:** Автоматическое отключение при превышении лимита ошибок  
-_Детали: См. [Python интеграция](../4-ai-engine/21-python-integration.md#оптимизация-производительности)_
+_Детали: См. [Python интеграция](/core-concepts/ai-engine/python-integration)_
 
-### 🛡️ [Command Validation Pattern](/03-core-concepts/1-architecture-patterns/14b-command-validation-pattern)
+### 🛡️ [Command Validation Pattern](/core-concepts/architecture-patterns/14b-command-validation-pattern)
 
 **Применение:** Безопасная валидация команд в TaskExecutionService  
 **Проблема:** Использование blacklist, injection атаки  
@@ -82,10 +82,10 @@ const RISK_METRICS = {
 
 ## 📚 Связанные документы
 
-- [Лучшие практики безопасности](/05-contributing/13-security-best-practices)
-- [Архитектура Shell](/03-core-concepts/2-shell-core/01-shell-architecture)
-- [Обработка ошибок](/03-core-concepts/2-shell-core/08-error-handling)
-- [Python интеграция](/03-core-concepts/4-ai-engine/21-python-integration)
+- [Лучшие практики безопасности](/contributing/security-best-practices)
+- [Архитектура Shell](/core-concepts/shell-core/shell-architecture)
+- [Обработка ошибок](/core-concepts/shell-core/error-handling)
+- [Python интеграция](/core-concepts/ai-engine/python-integration)
 
 ---
 

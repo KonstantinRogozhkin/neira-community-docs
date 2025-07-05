@@ -237,8 +237,8 @@ installChromeWebStore({
 
 ## Связанные документы
 
-- [Архитектура интеграции с Chrome Web Store](/03-core-concepts/2-shell-core/08-chrome-web-store-integration)
-- [Справочник по Chrome Extensions API](/04-reference/02-chrome-extensions)
+- [Архитектура интеграции с Chrome Web Store](/core-concepts/shell-core/chrome-web-store-integration)
+- [Справочник по Chrome Extensions API](/reference/chrome-extensions)
 
 ---
 

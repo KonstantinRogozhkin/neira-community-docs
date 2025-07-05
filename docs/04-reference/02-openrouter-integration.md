@@ -7,7 +7,7 @@
 
 NEIRA Super App интегрируется с OpenRouter API для предоставления доступа к 319 AI моделям от 12+ провайдеров с автоматическим управлением ценами и категоризацией.
 
-**Связи:** [AI и чат](/03-core-concepts/4-ai-engine/01-ai-architecture), [Системный обзор](/03-core-concepts/1-architecture-patterns/01-system-overview)
+**Связи:** [AI и чат](/core-concepts/ai-engine/ai-architecture), [Системный обзор](/core-concepts/architecture-patterns/system-overview)
 
 ## 📊 Статистика моделей
 

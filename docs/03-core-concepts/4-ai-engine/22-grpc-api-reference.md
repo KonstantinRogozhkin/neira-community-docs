@@ -11,7 +11,7 @@ description: Справочник по gRPC API для взаимодейств�
 
 NEIRA Super App использует gRPC для высокопроизводительного взаимодействия с внешними процессами, такими как Python-агенты. Этот документ описывает архитектуру gRPC API и основные примеры использования.
 
-**Связи:** [Интеграция с Python (gRPC)](/03-core-concepts/4-ai-engine/21-python-integration), [Архитектура AI](/03-core-concepts/4-ai-engine/01-ai-architecture), [gRPC Troubleshooting](/03-core-concepts/4-ai-engine/23-grpc-troubleshooting), [gRPC Methods Reference](/03-core-concepts/4-ai-engine/24-grpc-methods-reference).
+**Связи:** [Интеграция с Python (gRPC)](/core-concepts/ai-engine/python-integration), [Архитектура AI](/core-concepts/ai-engine/ai-architecture), [gRPC Troubleshooting](/core-concepts/ai-engine/grpc-troubleshooting), [gRPC Methods Reference](/core-concepts/ai-engine/grpc-methods-reference).
 
 ## 🏛️ Архитектура gRPC в NEIRA Super App
 
@@ -224,9 +224,9 @@ private async initializeGrpcClient(): Promise<void> {
 
 Для получения дополнительной информации см.:
 
-- **[gRPC Troubleshooting](/03-core-concepts/4-ai-engine/23-grpc-troubleshooting)** — диагностика проблем, отказоустойчивость и лучшие практики
-- **[gRPC Methods Reference](/03-core-concepts/4-ai-engine/24-grpc-methods-reference)** — полный справочник методов с примерами
-- **[Интеграция с Python](/03-core-concepts/4-ai-engine/21-python-integration)** — общая архитектура интеграции
+- **[gRPC Troubleshooting](/core-concepts/ai-engine/grpc-troubleshooting)** — диагностика проблем, отказоустойчивость и лучшие практики
+- **[gRPC Methods Reference](/core-concepts/ai-engine/grpc-methods-reference)** — полный справочник методов с примерами
+- **[Интеграция с Python](/core-concepts/ai-engine/python-integration)** — общая архитектура интеграции
 
 ---
 

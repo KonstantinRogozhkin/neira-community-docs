@@ -146,6 +146,6 @@ buf breaking --against='.git#branch=main'
 
 ## 8. Связанные документы
 
-- [Manager Architecture](/03-core-concepts/1-architecture-patterns/04-manager-architecture) — Использование gRPC в менеджерах
-- [Python Integration](/03-core-concepts/4-ai-engine/21-python-integration) — gRPC-взаимодействие с Python
-- [Chrome Extensions](/04-reference/02-chrome-extensions) — Использование protobuf-структур
+- [Manager Architecture](/core-concepts/architecture-patterns/manager-architecture) — Использование gRPC в менеджерах
+- [Python Integration](/core-concepts/ai-engine/python-integration) — gRPC-взаимодействие с Python
+- [Chrome Extensions](/reference/chrome-extensions) — Использование protobuf-структур

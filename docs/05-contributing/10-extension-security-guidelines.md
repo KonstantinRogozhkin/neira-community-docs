@@ -135,9 +135,9 @@ extensionsManager.on('api-access', (event) => {
 
 ## 📚 Связанные документы
 
-- [Security Principles](/03-core-concepts/1-architecture-patterns/08-security-principles)
-- [Chrome Extensions Reference](/04-reference/02-chrome-extensions)
-- [Risk Management Patterns](/03-core-concepts/1-architecture-patterns/15-risk-management-patterns)
+- [Security Principles](/core-concepts/architecture-patterns/security-principles)
+- [Chrome Extensions Reference](/reference/chrome-extensions)
+- [Risk Management Patterns](/core-concepts/architecture-patterns/risk-management-patterns)
 
 ---
 

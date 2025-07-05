@@ -15,9 +15,9 @@
 
 ## 3. Ключевые документы
 
-- Архитектура: [System Overview](/03-core-concepts/1-architecture-patterns/01-system-overview)
-- Золотые принципы: [Golden Principles](/05-contributing/01-golden-principles)
-- Troubleshooting: [Common Issues](/02-how-to-guides/01-troubleshooting-common-issues)
+- Архитектура: [System Overview](/core-concepts/architecture-patterns/system-overview)
+- Золотые принципы: [Golden Principles](/contributing/golden-principles)
+- Troubleshooting: [Common Issues](/how-to-guides/troubleshooting-common-issues)
 
 ## 4. Первые задачи
 

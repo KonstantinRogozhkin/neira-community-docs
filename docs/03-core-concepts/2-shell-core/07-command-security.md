@@ -126,8 +126,8 @@ function safeExecuteCommand(command: string, args: string[]): Promise<string> {
 
 ## 📚 Связанные документы
 
-- [Архитектура системы логирования](/03-core-concepts/2-shell-core/08-logger-architecture)
-- [Принципы безопасности Electron](/03-core-concepts/2-shell-core/04-electron-principles)
+- [Архитектура системы логирования](/core-concepts/shell-core/logger-architecture)
+- [Принципы безопасности Electron](/core-concepts/shell-core/electron-principles)
 
 
 ---

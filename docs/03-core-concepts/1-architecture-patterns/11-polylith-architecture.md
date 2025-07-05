@@ -228,6 +228,6 @@ this.logger.debug('Polylith response:', {
 
 ## 9. Связанные документы
 
-- [Manager Architecture](/03-core-concepts/1-architecture-patterns/04-manager-architecture) — Роль Polylith в менеджерах
-- [AI Engine](/03-core-concepts/4-ai-engine/01-ai-architecture) — Интеграция с AI-пайплайном
-- [API Management](/03-core-concepts/2-shell-core/05-api-management) — Взаимодействие через APIManager
+- [Manager Architecture](/core-concepts/architecture-patterns/manager-architecture) — Роль Polylith в менеджерах
+- [AI Engine](/core-concepts/ai-engine/ai-architecture) — Интеграция с AI-пайплайном
+- [API Management](/core-concepts/shell-core/api-management) — Взаимодействие через APIManager

@@ -170,9 +170,9 @@ if (
 
 **Связанные документы:**
 
-- [Архитектура Менеджеров](/03-core-concepts/1-architecture-patterns/04-manager-architecture)
-- [Интеграция MCP](/04-reference/04-mcp-integration)
-- [Архитектура IPC](/03-core-concepts/2-shell-core/06-ipc-architecture)
+- [Архитектура Менеджеров](/core-concepts/architecture-patterns/manager-architecture)
+- [Интеграция MCP](/reference/mcp-integration)
+- [Архитектура IPC](/core-concepts/shell-core/ipc-architecture)
 
 ## 🎯 Ключевые принципы
 

@@ -150,6 +150,6 @@ async function analyzeDependencies() {
 
 ## 9. Связанные документы
 
-- [Repository Management](/05-contributing/06-repository-management) — Управление репозиторием
-- [Code Quality Standards](/05-contributing/05-code-quality-standards) — Стандарты качества кода
-- [Development Checklist](/05-contributing/02-development-checklist) — Чек-лист для разработчиков
+- [Repository Management](/contributing/repository-management) — Управление репозиторием
+- [Code Quality Standards](/contributing/code-quality-standards) — Стандарты качества кода
+- [Development Checklist](/contributing/development-checklist) — Чек-лист для разработчиков

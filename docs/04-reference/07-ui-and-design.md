@@ -77,4 +77,4 @@
 - **Sunset** — тёплая оранжевая тема
 - **Black** — глубокая чёрная тема
 
-Подробности: [Дизайн-система и темизация](/03-core-concepts/3-ui-layer/18-design-theming)
+Подробности: [Дизайн-система и темизация](/core-concepts/ui-layer/design-theming)

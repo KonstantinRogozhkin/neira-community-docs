@@ -240,6 +240,6 @@ try {
 
 ## Связанные ресурсы
 
-- [Руководство по установке расширений](/02-how-to-guides/04-installing-chrome-extensions)
-- [Справочник по Chrome Extensions API](/04-reference/02-chrome-extensions)
-- [Техническая документация по CRX3 Parser](/04-reference/crx3-parser-guide)
+- [Руководство по установке расширений](/how-to-guides/installing-chrome-extensions)
+- [Справочник по Chrome Extensions API](/reference/chrome-extensions)
+- [Техническая документация по CRX3 Parser](/reference/crx3-parser-guide)

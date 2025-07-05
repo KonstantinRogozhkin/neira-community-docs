@@ -7,7 +7,7 @@ Status: ✅ Active and Production-Ready
 
 The Native Messaging Host is the secure bridge between the sandboxed world of Chrome Extensions and the powerful capabilities of the main Electron process. Its sole purpose is to provide a robust, secure, and high-performance communication channel, allowing extensions to request actions that they cannot perform themselves (e.g., file system access). This component is architected with an enterprise-grade focus on security, reliability, and structured code.
 
-This architecture is a critical part of the [Chrome Extensions support](/03-core-concepts/1-architecture-patterns/01-system-overview) in NEIRA Super App.
+This architecture is a critical part of the [Chrome Extensions support](/core-concepts/architecture-patterns/system-overview) in NEIRA Super App.
 
 ## 1. Core Architecture (TypeScript)
 

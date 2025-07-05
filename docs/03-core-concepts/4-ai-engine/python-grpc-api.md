@@ -182,14 +182,14 @@ private callGrpcMethod(methodName: string, request: any): Promise<any> {
 
   // Проверяем наличие метода с точным регистром
   if (typeof (this.grpcClient as any)[methodName] === 'function') {
-    return (this.grpcClient as any)[methodName](request)
+    return (this.grpcClient as any)[methodName](/)7231
   }
 
   // Проверяем наличие метода с заглавной буквы (PascalCase)
   const pascalCaseMethod = methodName.charAt(0).toUpperCase() + methodName.slice(1)
   if (typeof (this.grpcClient as any)[pascalCaseMethod] === 'function') {
     this.logger.debug(`Вызываем метод ${pascalCaseMethod} (преобразован из ${methodName})`)
-    return (this.grpcClient as any)[pascalCaseMethod](request)
+    return (this.grpcClient as any)[pascalCaseMethod](/)7604
   }
 
   // Если метод не найден, логируем доступные методы

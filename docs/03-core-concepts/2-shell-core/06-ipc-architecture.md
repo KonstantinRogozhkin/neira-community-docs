@@ -16,7 +16,7 @@ description: Архитектура межпроцессного взаимод�
 
 ## 📖 Модули архитектуры
 
-### 🏛️ [Основы Channel Groups](/03-core-concepts/2-shell-core/ipc-architecture/01-channel-groups-basics)
+### 🏛️ [Основы Channel Groups](/core-concepts/shell-core/ipc-architecture/channel-groups-basics)
 
 - Архитектурные принципы и структура групп каналов
 - IPCManager как дирижер, диаграммы взаимодействия
@@ -58,7 +58,7 @@ description: Архитектура межпроцессного взаимод�
 **Создание новой группы каналов:**
 
 1. **Определите каналы** в `shared-types` → См. раздел "Определение и регистрация каналов" выше
-2. **Создайте группу** в `shell/managers/channels/` → [Структура групп](/03-core-concepts/2-shell-core/ipc-architecture/01-channel-groups-basics)
+2. **Создайте группу** в `shell/managers/channels/` → [Структура групп](/core-concepts/shell-core/ipc-architecture/channel-groups-basics)
 3. **Зарегистрируйте в IPCManager** → См. раздел "Поток обработки запросов" выше
 4. **Создайте клиент** в `neira-app/lib/ipc-api.ts` → См. раздел "Практические примеры" выше
 
@@ -174,10 +174,10 @@ export const AllowedChannels = {
 
 ## 🔗 Связанные документы
 
-- [Архитектура Менеджеров](/03-core-concepts/1-architecture-patterns/04-manager-architecture)
-- [Принципы безопасности](/03-core-concepts/1-architecture-patterns/08-security-principles)
-- [Управление вкладками](/03-core-concepts/2-shell-core/08-tab-management)
-- [Типы shared-types](/../packages/shared-types/README)
+- [Архитектура Менеджеров](/core-concepts/architecture-patterns/manager-architecture)
+- [Принципы безопасности](/core-concepts/architecture-patterns/security-principles)
+- [Управление вкладками](/core-concepts/shell-core/tab-management)
+- [Типы shared-types](/../packages/shared-types/)
 
 ---
 

@@ -206,7 +206,7 @@ entries.forEach(entry => console.log('File:', entry.entryName))
 
 ## Связанные документы
 
-- [Chrome Extensions API](/04-reference/02-chrome-extensions)
+- [Chrome Extensions API](/reference/chrome-extensions)
 
 
 

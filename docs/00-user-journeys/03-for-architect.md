@@ -4,9 +4,9 @@
 
 ## 1. Главное за 5 минут
 
-- **System Overview** – [01-system-overview.md](/03-core-concepts/1-architecture-patterns/01-system-overview)
-- **Manager Architecture** – [04-manager-architecture.md](/03-core-concepts/1-architecture-patterns/04-manager-architecture)
-- **IPC-first Boundary** – [06-ipc-architecture.md](/03-core-concepts/2-shell-core/06-ipc-architecture)
+- **System Overview** – [01-system-overview.md](/core-concepts/architecture-patterns/system-overview)
+- **Manager Architecture** – [04-manager-architecture.md](/core-concepts/architecture-patterns/manager-architecture)
+- **IPC-first Boundary** – [06-ipc-architecture.md](/core-concepts/shell-core/ipc-architecture)
 
 ## 2. Карта пакетов монорепо
 
@@ -26,9 +26,9 @@
 
 ## 4. Глубокое чтение
 
-- Безопасность: [07-security-principles.md](/03-core-concepts/2-shell-core/07-security-principles)
-- AI-интеграция: [05-api-management.md](/03-core-concepts/1-architecture-patterns/05-api-management)
-- Расширения Chrome: [02-chrome-extensions.md](/04-reference/02-chrome-extensions)
+- Безопасность: [07-security-principles.md](/core-concepts/architecture-patterns/security-principles)
+- AI-интеграция: [05-api-management.md](/core-concepts/shell-core/api-management)
+- Расширения Chrome: [02-chrome-extensions.md](/reference/chrome-extensions)
 
 ## 5. TODO & Roadmap
 

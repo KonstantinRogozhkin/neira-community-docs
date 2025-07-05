@@ -7,7 +7,7 @@
 
 E2E тесты в NEIRA Super App используют Playwright для автоматизации пользовательских сценариев. Система поддерживает тестирование на реальном Electron приложении с полным стеком: Shell → neira-app → MCP агенты.
 
-**Связи:** [Системный обзор](/03-core-concepts/1-architecture-patterns/01-system-overview), [Troubleshooting](01-troubleshooting-common-issues.md)
+**Связи:** [Системный обзор](/core-concepts/architecture-patterns/system-overview), [Troubleshooting](/how-to-guides/troubleshooting-common-issues)
 
 ## ⚡ Быстрый старт
 

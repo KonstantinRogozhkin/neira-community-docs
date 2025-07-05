@@ -228,9 +228,9 @@ logManager.setLogLevel('development', 'debug'); // В development логируе
 
 ## 📚 Связанные документы
 
-- [Безопасная обработка команд](/03-core-concepts/2-shell-core/07-command-security)
+- [Безопасная обработка команд](/core-concepts/shell-core/command-security)
 
-- [IPC-архитектура](/03-core-concepts/2-shell-core/06-ipc-architecture)
+- [IPC-архитектура](/core-concepts/shell-core/ipc-architecture)
 
 ---
 

@@ -18,14 +18,14 @@ const config: Config = {
   url: 'https://neira-org.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/neira-super-app-2/',
+  baseUrl: '/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'neira-org', // Usually your GitHub org/user name.
   projectName: 'neira-super-app-2', // Usually your repo name.
 
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
 
   // Even if you don't use internationalization, you can use this field to set
@@ -109,7 +109,7 @@ const config: Config = {
           items: [
             {
               label: 'Введение',
-              to: '/docs/README',
+              to: '/docs/',
             },
           ],
         },

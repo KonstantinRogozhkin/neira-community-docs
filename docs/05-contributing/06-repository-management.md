@@ -228,9 +228,9 @@ yarn upgrade-interactive --latest
 
 ## 10. 📚 Связанные документы
 
-- [Development Checklist](/05-contributing/02-development-checklist) — Чек-лист для разработчиков
-- [Code Quality Standards](/05-contributing/05-code-quality-standards) — Стандарты качества кода
-- [Dependency Management](/05-contributing/08-dependency-management) — Управление зависимостями
+- [Development Checklist](/contributing/development-checklist) — Чек-лист для разработчиков
+- [Code Quality Standards](/contributing/code-quality-standards) — Стандарты качества кода
+- [Dependency Management](/contributing/dependency-management) — Управление зависимостями
 
 ---
 

@@ -150,8 +150,8 @@ gh project item-edit --id ITEM_ID \
 
 ## 🎓 Связанные документы
 
-- [Жизненный цикл документации](/05-contributing/04-documentation-lifecycle) — основной процесс S-E-S-V-C
-- [Шаблон Release Notes](/templates/release-note-template) — результат Phase 3
+- [Жизненный цикл документации](/contributing/documentation-lifecycle) — основной процесс S-E-S-V-C
+- [Шаблон Release Notes](https://github.com/neira-org/neira-super-app-2/tree/main/templates/release-note-template) — результат Phase 3
 
 
 ---

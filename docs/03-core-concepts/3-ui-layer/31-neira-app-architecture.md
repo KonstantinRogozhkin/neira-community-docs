@@ -7,7 +7,7 @@
 
 `neira-app` — это чистый UI-слой для NEIRA Super App. Он представляет собой Next.js приложение, работающее в режиме статической сборки (`output: 'export'`), которое взаимодействует с `shell` (основным процессом Electron) через типизированный IPC-мост.
 
-Связь: [Системный обзор](/03-core-concepts/1-architecture-patterns/01-system-overview), [Архитектура IPC](/03-core-concepts/2-shell-core/06-ipc-architecture)
+Связь: [Системный обзор](/core-concepts/architecture-patterns/system-overview), [Архитектура IPC](/core-concepts/shell-core/ipc-architecture)
 
 ## 🏗️ Ключевые принципы архитектуры
 
@@ -61,5 +61,5 @@ yarn build:neira-app
 
 ## 🔗 Связанные пакеты
 
-- [`shell`](/03-core-concepts/1-architecture-patterns/04-manager-architecture) — Electron-ядро, предоставляет IPC API.
-- [`shared-types`](/03-core-concepts/2-shell-core/06-ipc-architecture) — типизированные контракты для IPC.
+- [`shell`](/core-concepts/architecture-patterns/manager-architecture) — Electron-ядро, предоставляет IPC API.
+- [`shared-types`](/core-concepts/shell-core/ipc-architecture) — типизированные контракты для IPC.

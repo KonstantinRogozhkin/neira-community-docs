@@ -107,6 +107,6 @@ npm run check:circular-deps
 
 ## 🔗 Связанные документы
 
-- [Золотые принципы разработки](01-golden-principles.md)
-- [Чек-лист разработки](02-development-checklist.md)
-- [IPC архитектура](/03-core-concepts/2-shell-core/ipc-architecture/01-ipc-overview)
+- [Золотые принципы разработки](/contributing/golden-principles)
+- [Чек-лист разработки](/contributing/development-checklist)
+- [IPC архитектура](/core-concepts/shell-core/ipc-architecture)

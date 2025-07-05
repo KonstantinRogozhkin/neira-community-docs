@@ -109,9 +109,9 @@
 
 Прежде чем диагностировать проблемы, убедитесь, что вы понимаете, как система должна работать.
 
-- **Общая архитектура воркеров:** [09-workers-architecture.md](/03-core-concepts/2-shell-core/09-workers-architecture)
-- **Принципы IPC-взаимодействия:** [06-ipc-architecture.md](/03-core-concepts/2-shell-core/06-ipc-architecture)
-- **Управление браузером и вкладками:** [22-automation-engine.md](/03-core-concepts/2-shell-core/22-automation-engine)
+- **Общая архитектура воркеров:** [09-workers-architecture.md](/core-concepts/shell-core/workers-architecture)
+- **Принципы IPC-взаимодействия:** [06-ipc-architecture.md](/core-concepts/shell-core/ipc-architecture)
+- **Управление браузером и вкладками:** [22-automation-engine.md](/core-concepts/shell-core/automation-engine)
 
 ---
 

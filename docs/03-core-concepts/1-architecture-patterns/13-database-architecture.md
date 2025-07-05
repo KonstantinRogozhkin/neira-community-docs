@@ -270,6 +270,6 @@ export const db = drizzle(sqlite)
 
 ## 11. Связанные документы
 
-- [Polylith Architecture](/03-core-concepts/1-architecture-patterns/10-polylith-architecture) — Использование БД в компонентах
-- [Code Organization](/03-core-concepts/1-architecture-patterns/03-code-organization) — Структура данных в проекте
-- [Security Principles](/03-core-concepts/1-architecture-patterns/08-security-principles) — Безопасность БД
+- [Polylith Architecture](/core-concepts/architecture-patterns/polylith-architecture) — Использование БД в компонентах
+- [Code Organization](/core-concepts/architecture-patterns/code-organization) — Структура данных в проекте
+- [Security Principles](/core-concepts/architecture-patterns/security-principles) — Безопасность БД

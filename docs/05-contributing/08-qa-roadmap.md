@@ -144,6 +144,6 @@ yarn test:all
 
 **Связанные документы:**
 
-- [Тестирование приложения](/05-contributing/07-test-the-application)
-- [Стандарты качества кода](/05-contributing/05-code-quality-standards)
-- [Обзор архитектуры](/03-core-concepts/1-architecture-patterns/01-system-overview)
+- [Тестирование приложения](/contributing/test-the-application)
+- [Стандарты качества кода](/contributing/code-quality-standards)
+- [Обзор архитектуры](/core-concepts/architecture-patterns/system-overview)

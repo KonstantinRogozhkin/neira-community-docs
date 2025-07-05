@@ -192,6 +192,6 @@ const healthChecks: HealthCheck[] = [
 
 **Связанные документы:**
 
-- [Security Principles](/03-core-concepts/1-architecture-patterns/08-security-principles)
-- [Error Handling](/03-core-concepts/2-shell-core/08-error-handling)
-- [Python Integration](/03-core-concepts/4-ai-engine/21-python-integration)
+- [Security Principles](/core-concepts/architecture-patterns/security-principles)
+- [Error Handling](/core-concepts/shell-core/error-handling)
+- [Python Integration](/core-concepts/ai-engine/python-integration)

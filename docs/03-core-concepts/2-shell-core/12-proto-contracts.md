@@ -217,9 +217,9 @@ function validateProtoMessage(message: any): boolean {
 
 ## Связанные документы
 
-- [Архитектура системы](/03-core-concepts/1-architecture-patterns/01-system-overview)
-- [Интеграция с Chrome Web Store](/03-core-concepts/2-shell-core/08-chrome-web-store-integration)
-- [Python API интеграция](/03-core-concepts/4-ai-engine/21-python-integration)
+- [Архитектура системы](/core-concepts/architecture-patterns/system-overview)
+- [Интеграция с Chrome Web Store](/core-concepts/shell-core/chrome-web-store-integration)
+- [Python API интеграция](/core-concepts/ai-engine/python-integration)
 
 ---
 

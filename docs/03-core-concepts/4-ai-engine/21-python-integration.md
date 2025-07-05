@@ -13,7 +13,7 @@ description: Архитектура взаимодействия с Python-бэ�
 
 **Принцип:** Использовать лучший инструмент для каждой задачи. JavaScript для UI и управления, Python — для вычислений и AI.
 
-**Связи:** [Архитектура Менеджеров](/03-core-concepts/1-architecture-patterns/04-manager-architecture).
+**Связи:** [Архитектура Менеджеров](/core-concepts/architecture-patterns/manager-architecture).
 
 ## 🏛️ Архитектура: Локальный бэкенд и gRPC
 
@@ -237,14 +237,14 @@ private callGrpcMethod(methodName: string, request: any): Promise<any> {
 
   // Проверяем наличие метода с точным регистром
   if (typeof (this.grpcClient as any)[methodName] === 'function') {
-    return (this.grpcClient as any)[methodName](request)
+    return (this.grpcClient as any)[methodName](/)10804
   }
 
   // Проверяем наличие метода с заглавной буквы (PascalCase)
   const pascalCaseMethod = methodName.charAt(0).toUpperCase() + methodName.slice(1)
   if (typeof (this.grpcClient as any)[pascalCaseMethod] === 'function') {
     this.logger.debug(`Вызываем метод ${pascalCaseMethod} (преобразован из ${methodName})`)
-    return (this.grpcClient as any)[pascalCaseMethod](request)
+    return (this.grpcClient as any)[pascalCaseMethod](/)11177
   }
 
   // Если метод не найден, логируем доступные методы
